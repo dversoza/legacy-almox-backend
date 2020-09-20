@@ -10,7 +10,7 @@ module.exports = ({ env }) => ({
         database: env("DATABASE_NAME", "almox-control"),
         username: env("DATABASE_USERNAME", "postgres"),
         password: env("DATABASE_PASSWORD", "1304"),
-        ssl: { rejectUnauthorized: false },
+        ssl: false,
       },
       options: {},
     },
