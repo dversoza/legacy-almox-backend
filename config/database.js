@@ -10,20 +10,9 @@ module.exports = ({ env }) => ({
         database: env("DATABASE_NAME", "almox-control"),
         username: env("DATABASE_USERNAME", "postgres"),
         password: env("DATABASE_PASSWORD", "1304"),
-        ssl: {
-          require: true,
-          rejectUnauthorized: false,
-        },
+        ssl: { rejectUnauthorized: false },
       },
-      options: {
-        pool: {
-          min: 0,
-          max: 10,
-          idleTimeoutMillis: 30000,
-          createTimeoutMillis: 30000,
-          acquireTimeoutMillis: 30000,
-        },
-      },
+      options: {},
     },
   },
 });
