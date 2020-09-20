@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operations",
+  "info": {
+    "name": "Operações"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "date": {
+      "type": "datetime",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "operations"
+    },
+    "vendor": {
+      "model": "vendors",
+      "via": "operations"
+    },
+    "product": {
+      "model": "products",
+      "via": "operations"
+    },
+    "op": {
+      "type": "enumeration",
+      "enum": [
+        "Entrada",
+        "Saida"
+      ],
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Interna",
+        "Compra",
+        "Doacao"
+      ],
+      "required": true
+    },
+    "quantity": {
+      "type": "decimal",
+      "required": true,
+      "min": 0
+    },
+    "IsDeleted": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unidades_de_medidas",
+  "info": {
+    "name": "Unidades de Medida"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "produtos": {
+      "via": "um",
+      "collection": "products"
+    }
+  }
+}

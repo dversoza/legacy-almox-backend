@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "vendors",
+  "info": {
+    "name": "Barracas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "manager": {
+      "type": "string",
+      "required": true
+    },
+    "contact": {
+      "type": "string"
+    },
+    "operations": {
+      "via": "vendor",
+      "collection": "operations"
+    }
+  }
+}

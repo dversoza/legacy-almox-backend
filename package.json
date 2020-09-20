@@ -1,0 +1,41 @@
+{
+  "name": "almox-control-backend",
+  "private": true,
+  "version": "0.0.1",
+  "description": "A storage control solution.",
+  "author": {
+    "name": "Daniel Versoza Alves",
+    "email": "daniel_versoza@hotmail.com",
+    "url": "https://www.linkedin.com/in/dversoza/"
+  },
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "knex": "<0.20.0",
+    "pg": "latest",
+    "strapi": "3.1.4",
+    "strapi-admin": "3.1.4",
+    "strapi-connector-bookshelf": "3.1.4",
+    "strapi-plugin-content-manager": "3.1.4",
+    "strapi-plugin-content-type-builder": "3.1.4",
+    "strapi-plugin-documentation": "3.1.4",
+    "strapi-plugin-email": "3.1.4",
+    "strapi-plugin-graphql": "3.1.4",
+    "strapi-plugin-upload": "3.1.4",
+    "strapi-plugin-users-permissions": "3.1.4",
+    "strapi-utils": "3.1.4"
+  },
+  "strapi": {
+    "uuid": "c98ff516-c2e8-48b9-b797-2741f9432dc2"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
