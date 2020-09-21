@@ -617,7 +617,8 @@
           "product": {
             "required": [
               "id",
-              "name"
+              "name",
+              "um"
             ],
             "properties": {
               "id": {
@@ -626,14 +627,14 @@
               "name": {
                 "type": "string"
               },
-              "um": {
-                "type": "string"
-              },
               "operations": {
                 "type": "array",
                 "items": {
                   "type": "string"
                 }
+              },
+              "um": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"

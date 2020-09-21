@@ -14,13 +14,29 @@
       "required": true,
       "unique": true
     },
-    "um": {
-      "model": "unidades-de-medida",
-      "via": "produtos"
-    },
     "operations": {
-      "via": "product",
-      "collection": "operations"
+      "collection": "operations",
+      "via": "product"
+    },
+    "um": {
+      "type": "enumeration",
+      "enum": [
+        "unidades",
+        "kilos",
+        "litros",
+        "baldes",
+        "pacotes",
+        "caixas",
+        "sacos",
+        "rolos",
+        "pares",
+        "gramas",
+        "duzias",
+        "vidros",
+        "bisnagas"
+      ],
+      "default": "unidades",
+      "required": true
     }
   }
 }

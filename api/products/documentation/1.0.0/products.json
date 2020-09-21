@@ -517,7 +517,8 @@
       "Products": {
         "required": [
           "id",
-          "name"
+          "name",
+          "um"
         ],
         "properties": {
           "id": {
@@ -525,32 +526,6 @@
           },
           "name": {
             "type": "string"
-          },
-          "um": {
-            "required": [
-              "id",
-              "name"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "produtos": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "operations": {
             "type": "array",
@@ -598,6 +573,25 @@
                 }
               }
             }
+          },
+          "um": {
+            "type": "string",
+            "default": "unidades",
+            "enum": [
+              "unidades",
+              "kilos",
+              "litros",
+              "baldes",
+              "pacotes",
+              "caixas",
+              "sacos",
+              "rolos",
+              "pares",
+              "gramas",
+              "duzias",
+              "vidros",
+              "bisnagas"
+            ]
           },
           "created_by": {
             "required": [
@@ -691,13 +685,11 @@
       },
       "NewProducts": {
         "required": [
-          "name"
+          "name",
+          "um"
         ],
         "properties": {
           "name": {
-            "type": "string"
-          },
-          "um": {
             "type": "string"
           },
           "operations": {
@@ -705,6 +697,25 @@
             "items": {
               "type": "string"
             }
+          },
+          "um": {
+            "type": "string",
+            "default": "unidades",
+            "enum": [
+              "unidades",
+              "kilos",
+              "litros",
+              "baldes",
+              "pacotes",
+              "caixas",
+              "sacos",
+              "rolos",
+              "pares",
+              "gramas",
+              "duzias",
+              "vidros",
+              "bisnagas"
+            ]
           },
           "created_by": {
             "type": "string"

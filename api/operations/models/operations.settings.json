@@ -23,8 +23,8 @@
       "via": "operations"
     },
     "product": {
-      "model": "products",
-      "via": "operations"
+      "via": "operations",
+      "model": "products"
     },
     "op": {
       "type": "enumeration",
