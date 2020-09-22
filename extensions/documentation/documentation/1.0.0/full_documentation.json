@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/21/2020 7:28:22 PM"
+    "x-generation-date": "09/21/2020 9:40:26 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3831,6 +3831,12 @@
             "type": "boolean",
             "default": false
           },
+          "taker": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "number"
+          },
           "created_by": {
             "required": [
               "id",
@@ -3963,6 +3969,12 @@
             "type": "boolean",
             "default": false
           },
+          "taker": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "number"
+          },
           "created_by": {
             "type": "string"
           },
@@ -4021,6 +4033,12 @@
                 },
                 "IsDeleted": {
                   "type": "boolean"
+                },
+                "taker": {
+                  "type": "string"
+                },
+                "cost": {
+                  "type": "number"
                 },
                 "created_by": {
                   "type": "string"
@@ -4243,6 +4261,12 @@
                 },
                 "IsDeleted": {
                   "type": "boolean"
+                },
+                "taker": {
+                  "type": "string"
+                },
+                "cost": {
+                  "type": "number"
                 },
                 "created_by": {
                   "type": "string"
@@ -4717,6 +4741,12 @@
                 },
                 "IsDeleted": {
                   "type": "boolean"
+                },
+                "taker": {
+                  "type": "string"
+                },
+                "cost": {
+                  "type": "number"
                 },
                 "created_by": {
                   "type": "string"

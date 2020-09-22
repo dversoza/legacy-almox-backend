@@ -666,6 +666,12 @@
             "type": "boolean",
             "default": false
           },
+          "taker": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "number"
+          },
           "created_by": {
             "required": [
               "id",
@@ -797,6 +803,12 @@
           "IsDeleted": {
             "type": "boolean",
             "default": false
+          },
+          "taker": {
+            "type": "string"
+          },
+          "cost": {
+            "type": "number"
           },
           "created_by": {
             "type": "string"

@@ -576,6 +576,12 @@
                 "IsDeleted": {
                   "type": "boolean"
                 },
+                "taker": {
+                  "type": "string"
+                },
+                "cost": {
+                  "type": "number"
+                },
                 "created_by": {
                   "type": "string"
                 },

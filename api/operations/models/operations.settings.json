@@ -23,8 +23,8 @@
       "via": "operations"
     },
     "product": {
-      "via": "operations",
-      "model": "products"
+      "model": "products",
+      "via": "operations"
     },
     "op": {
       "type": "enumeration",
@@ -51,6 +51,13 @@
     "IsDeleted": {
       "type": "boolean",
       "default": false
+    },
+    "taker": {
+      "type": "richtext"
+    },
+    "cost": {
+      "type": "decimal",
+      "min": 0
     }
   }
 }

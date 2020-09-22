@@ -15,8 +15,8 @@
       "unique": true
     },
     "operations": {
-      "collection": "operations",
-      "via": "product"
+      "via": "product",
+      "collection": "operations"
     },
     "um": {
       "type": "enumeration",
