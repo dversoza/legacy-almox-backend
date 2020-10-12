@@ -648,7 +648,8 @@
             "type": "string",
             "enum": [
               "Entrada",
-              "Saida"
+              "Saida",
+              "Devolucao"
             ]
           },
           "type": {
@@ -786,7 +787,8 @@
             "type": "string",
             "enum": [
               "Entrada",
-              "Saida"
+              "Saida",
+              "Devolucao"
             ]
           },
           "type": {

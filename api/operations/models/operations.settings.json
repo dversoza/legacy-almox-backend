@@ -30,7 +30,8 @@
       "type": "enumeration",
       "enum": [
         "Entrada",
-        "Saida"
+        "Saida",
+        "Devolucao"
       ],
       "required": true
     },

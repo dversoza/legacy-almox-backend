@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/21/2020 9:40:26 PM"
+    "x-generation-date": "10/12/2020 1:07:46 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3813,7 +3813,8 @@
             "type": "string",
             "enum": [
               "Entrada",
-              "Saida"
+              "Saida",
+              "Devolucao"
             ]
           },
           "type": {
@@ -3951,7 +3952,8 @@
             "type": "string",
             "enum": [
               "Entrada",
-              "Saida"
+              "Saida",
+              "Devolucao"
             ]
           },
           "type": {
